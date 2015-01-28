@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<PyBrain>
+	<Network class="pybrain.structure.networks.feedforward.FeedForwardNetwork" name="FeedForwardNetwork-20">
+		<name val="'FeedForwardNetwork-20'"/>
+		<Modules>
+			<LinearLayer class="pybrain.structure.modules.linearlayer.LinearLayer" inmodule="True" name="LinearLayer-17">
+				<dim val="10"/>
+			</LinearLayer>
+			<SigmoidLayer class="pybrain.structure.modules.sigmoidlayer.SigmoidLayer" name="SigmoidLayer-21" outmodule="True">
+				<dim val="2"/>
+			</SigmoidLayer>
+			<SigmoidLayer class="pybrain.structure.modules.sigmoidlayer.SigmoidLayer" name="SigmoidLayer-22">
+				<dim val="5"/>
+			</SigmoidLayer>
+		</Modules>
+		<Connections>
+			<FullConnection class="pybrain.structure.connections.full.FullConnection" name="FullConnection-18">
+				<inmod val="LinearLayer-17"/>
+				<outmod val="SigmoidLayer-22"/>
+				<Parameters>[1.864961603615473, -2.0109818869844696, -1.1480473159992315, -0.2169707613622113, -1.2924122262848008, 0.34031985193359343, 0.24620899290443091, 1.2630500840326031, 0.36328883707225934, 1.291826412759262, -0.5183595512207857, -1.3092943794662226, -1.2746540996615068, -0.43446694826158527, 1.5971529174835624, 2.2095353990558348, -0.24442679214920848, -0.64472565309334695, 0.27327362689653451, -0.36362572996699649, -0.27566792677680813, 0.91332340361147013, -0.083548075967429219, 2.7074349315923785, -1.2815486320550917, -0.49245299736029707, 0.17284938912746575, -0.067710431013082953, 0.98569593374812925, -0.84988503461432419, -1.84803153340215, -2.3315923725879513, -1.3860119469238963, -1.1116423329085425, -0.91100540019551834, -0.78181218556854937, 1.8320261630863974, 1.1337263918540645, 2.0099404494410287, 1.3485728568612119, 2.2151620352245316, 0.54501415035888978, 1.3302278916973236, 1.5864856233761384, -0.92059838289345652, -0.67317326793402466, -2.4133685983118607, -1.445694813997908, -1.0698742061580153, -0.97482352199810351]</Parameters>
+			</FullConnection>
+			<FullConnection class="pybrain.structure.connections.full.FullConnection" name="FullConnection-19">
+				<inmod val="SigmoidLayer-22"/>
+				<outmod val="SigmoidLayer-21"/>
+				<Parameters>[0.71860364703081603, 2.6738952893815982, -1.3780558409828381, 1.9635052764662919, -3.5304761813750378, -1.3281816159470647, 2.6487957590729492, 0.030036394117841116, -3.5609422221422156, 2.5690248317438025]</Parameters>
+			</FullConnection>
+		</Connections>
+	</Network>
+</PyBrain>

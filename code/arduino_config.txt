@@ -1,0 +1,11 @@
+/dev/tty.usbmodemfa131	/dev/ttyACM0
+test_out	d:7:o
+test_pwm	d:5:p
+drive_dir_r	d:12:o
+drive_spd_r	d:3:p
+drive_brk_r	d:9:o
+drive_dir_l	d:13:o
+drive_spd_l	d:11:p
+drive_brk_l	d:8:o
+rng_trig	d:4:o
+rng_echo	d:2:i
